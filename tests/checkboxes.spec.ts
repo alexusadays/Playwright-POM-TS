@@ -35,4 +35,6 @@ test.describe('Checkboxes page', () => {
     await pm.checkboxesPage.uncheckSecondCheckbox();
     await pm.checkboxesPage.assertCheckboxesState(false, false);
   });
+
+  //test
 });
