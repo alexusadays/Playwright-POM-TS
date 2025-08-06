@@ -6,7 +6,7 @@ import PomManager from '../pages/ManagePage';
 import { validUser } from '../test-data/validUser.ts';
 
 type MyFixtures = {
-  pm: PomManager;                       
+  pm: PomManager;
   validUser: { username: string; password: string };
 };
 
