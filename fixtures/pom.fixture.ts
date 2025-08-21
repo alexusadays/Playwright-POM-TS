@@ -1,10 +1,10 @@
 // We are creating a Playwright fixture that initializes a page object manager (PomManager) for each test.
 // This allows us to access various page objects (like LoginPage, SecurePage, etc.) through the manager.
 // The fixture also provides a valid user object for authentication tests.
-
 import { test as base } from '@playwright/test';
 import PomManager from '../pages/ManagePage';
-import {validUser} from '../test-data/validUser';
+import { validUser } from '../test-data/validUser.ts';
+
 
 type MyFixtures = {
   pm: PomManager;                       
