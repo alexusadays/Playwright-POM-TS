@@ -1,7 +1,7 @@
 import { test } from '../fixtures/pom.fixture';
 
-test('Deliberate failure: wrong flash message', async ({ pm }) => {
+test('This will pass now', async ({ pm }) => {
     await pm.loginPage.openLoginPage();
     await pm.loginPage.userLogin("fakeUser", "fakePass");
-    await pm.securePage.assertSuccess();
+    await pm.loginPage.assertFailedUsername();
 });
