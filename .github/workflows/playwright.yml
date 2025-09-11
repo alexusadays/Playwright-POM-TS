@@ -1,0 +1,37 @@
+# .github/workflows/playwright.yml
+name: Playwright CI
+
+on:
+  push: { branches: [main] }
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      TEST_USER: ${{ secrets.TEST_USER }}
+      TEST_PASS: ${{ secrets.TEST_PASS }}
+      BASE_URL:  ${{ secrets.BASE_URL }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps & browsers
+        run: |
+          npm ci
+          npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npx playwright test --reporter=html
+
+      - name: Upload Playwright report   # always upload, even on failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report
