@@ -18,7 +18,7 @@ export const test = base.extend<MyFixtures>({
   },
 
   // Plain value fixture (available in every test)
-  validUser
+  validUser,
 });
 
 export { expect } from '@playwright/test';
