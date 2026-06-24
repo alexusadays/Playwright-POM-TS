@@ -1,0 +1,16 @@
+Why Playwright fails on this screenshot
+───────────────────────────────────────
+• The baseline image in this repo was generated on Windows (`*-win32.png`).
+• GitHub Actions runs on Ubuntu, so Playwright looks for `*-linux.png`.
+  When it can’t find that file, it throws “Snapshot doesn't exist”.
+
+How to avoid the mismatch
+1. Use the *same OS/container* locally and in CI (recommended), OR
+2. Generate both baselines once:
+     npx playwright test --update-snapshots   # inside your CI OS
+   then commit the new   checkboxes-after-check-chromium-linux.png
+3. Skip the screenshot in CI:
+     if (!process.env.CI) await expect(page).toHaveScreenshot('...');
+
+Playwright adds the platform suffix automatically.  
+Matching the filename to the runner’s OS (or committing both variants) keeps tests green.
