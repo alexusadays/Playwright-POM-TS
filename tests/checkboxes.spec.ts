@@ -10,7 +10,7 @@ test.describe('Checkboxes page', () => {
     await pm.checkboxesPage.openCheckboxesPage();
     await pm.checkboxesPage.checkFirstCheckbox();
 
-    // ── About `page` below ───────────────────────────────────────────
+  // ── About `page` below ───────────────────────────────────────────
     // • `page` comes from Playwright’s BUILT-IN fixture; 
     // our pom.fixture merely extends the default set, so `page`, `context`, etc. are still available.
     // • It is the exact SAME tab that PomManager is working on.
