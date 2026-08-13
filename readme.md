@@ -1,7 +1,6 @@
 # Playwright + TypeScript — Page Object Model Example
-## Git Hub Actions Report Here:
-![Playwright Tests](https://github.com/alexusadays/Playwright-POM-TS/actions/workflows/playwright.yml/badge.svg?branch=main)
-
+Updated Readme from your_github_actions
+ig
 > A minimal, beginner-friendly POM starter that powers my YouTube series  
 > **“Learn QA Automation with Playwright Typescript”**.
 > https://www.youtube.com/watch?v=Gxn0i76jIJI&list=PLfw_nI4u_6WOuClIHl4Wl5V--ufJGin71
@@ -58,7 +57,6 @@ git checkout v0-baseline
 | 0 Baseline POM           | `v0-baseline`         | `lesson/00-baseline`          |
 | 1 Fixtures (coming)      | `v1-fixtures`         | `lesson/01-fixtures`          |
 | 2 GitHub Actions (coming)| `v2-ci-github-action` | `lesson/02-ci-github-action`  |
-
 ---
 
 ## 👀 TypeScript visibility cheatsheet

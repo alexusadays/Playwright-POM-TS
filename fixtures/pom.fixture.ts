@@ -3,7 +3,7 @@
 // The fixture also provides a valid user object for authentication tests.
 import { test as base } from '@playwright/test';
 import PomManager from '../pages/ManagePage';
-import { validUser } from '../test-data/validUser.ts';
+import { validUser } from '../test-data/validUser';
 
 type MyFixtures = {
   pm: PomManager;                       
