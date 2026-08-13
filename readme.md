@@ -5,6 +5,9 @@ ig
 > **“Learn QA Automation with Playwright Typescript”**.
 > https://www.youtube.com/watch?v=Gxn0i76jIJI&list=PLfw_nI4u_6WOuClIHl4Wl5V--ufJGin71
 
+> **Need the quick CI setup steps?**  
+> See **[CI_GitHub_Actions_Checklist.md](./github_actions_checklist.md)** ✅
+
 ---
 
 ## 🚀 Quick start
@@ -49,12 +52,11 @@ git checkout v0-baseline
 
 ## 🗺️ Course checkpoints
 
-| Stage | Git tag                     | Branch               |
-|-------|-----------------------------|----------------------|
-| 0 Baseline POM           | `v0-baseline` | `lesson/00-baseline` |
-| 1 Fixtures (coming)      | _TBD_         | `lesson/01-fixtures` |
-| 2 GitHub Actions (coming)| _TBD_         | `lesson/02-ci`       |
-
+| Stage                    | Git tag               | Branch               |
+|--------------------------|-----------------------|----------------------|
+| 0 Baseline POM           | `v0-baseline`         | `lesson/00-baseline`          |
+| 1 Fixtures (coming)      | `v1-fixtures`         | `lesson/01-fixtures`          |
+| 2 GitHub Actions (coming)| `v2-ci-github-action` | `lesson/02-ci-github-action`  |
 ---
 
 ## 👀 TypeScript visibility cheatsheet
